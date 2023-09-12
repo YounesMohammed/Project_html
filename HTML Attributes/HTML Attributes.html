@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>HTML Attributes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS_Attributes.CSS">
+</head>
+
+<body>
+    <hr>
+    <a href="../HTML Tutorial/HTML Tutorial.html">
+        <h1>My Html.com</h1>
+    </a>
+    <hr>
+    <h1>HTML Attributes</h1>
+    <br>
+    <hr class="Lorem">
+    <p>HTML attributes provide additional information about HTML elements.</p>
+    <hr>
+    <h2>HTML Attributes</h2>
+    <ul>
+        <li>All HTML elements can have <b>attributes</b></li>
+        <li>Attributes provide <b>additional information</b> about elements</li>
+        <li>Attributes are always specified in <b>the start tag</b></li>
+        <li>Attributes usually come in name/value pairs like: <b>name="value"</b></li>
+    </ul>
+    <hr>
+    <h2>The href Attribute</h2>
+    <p>The &lt;a&gt; tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h2>Examples</h2>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;a href="http://www.iugaza.edu.ps"&gt;Visit the Islamic University of Gaza&lt;/a&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <hr>
+    <h2>The src Attribute</h2>
+    <p>The &lt;img&gt; tag is used to embed an image in an HTML page. The src attribute specifies the path to the image
+        to be displayed:</p>
+    <p>There are two ways to specify the URL in the <b>src</b> attribute:</p>
+    <p><b>1. Absolute URL</b> - Links to an external image that is hosted on another website. Example:
+        src="http://www.iugaza.edu.ps".</p>
+    <br>
+    <table border="5" height="400px" width="600px">
+        <thead>
+            <tr>
+                <td>
+                    <b>Notes:</b> External images might be under copyright. If you do not get permission to use it, you
+                    may be in violation of copyright laws. In addition, you cannot control external images; it can
+                    suddenly be removed or changed.
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <p><b>2. Relative URL</b> - Links to an image that is hosted within the website. Here, the URL does not include the
+        domain name. If the URL begins without a slash, it will be relative to the current page. Example:
+        src="HTML5-Development.jpg". If the URL begins with a slash, it will be relative to the domain. Example:
+        src="/images/HTML5-Development.jpg".</p>
+    <p><b>Tip:</b> It is almost always best to use relative URLs. They will not break if you change domain.</p>
+    <hr>
+    <br>
+    <h2>The width and height Attributes</h2>
+    <p>The &lt;img&gt; tag should also contain the width and height attributes, which specifies the width and height of
+        the image (in pixels):</p>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Examples</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;img src="html-5-2.png" width="500" height="600"&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <h2>The alt Attribute</h2>
+    <p>The required <b>alt</b> attribute for the <b>&lt;img&gt; </b> tag specifies an alternate text for an image, if
+        the image for some reason cannot be displayed. This can be due to slow connection, or an error in the
+        <b>&lt;img&gt;</b> attribute, or if the user uses a screen reader.</p>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Examples</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;img src="html-5-2.png" alt="HTML5"&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <h2>The lang Attribute</h2>
+    <p>You should always include the <b>lang</b> attribute inside the <b>&lt;html&gt;</b> tag, to declare the language
+        of the Web page. This is meant to assist search engines and browsers.</p>
+    <br>
+    <p>The following example specifies English as the language:</p>
+    <table border="5" height="400px" width="600px">
+        <thead>
+            <tr>
+                <td>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html lang="en"&gt;
+                    <br>
+                    &lt;body&gt;
+                    <br>
+                    <p>...</p>
+                    <br>
+                    &lt;/body&gt;
+                    <br>
+                    &lt;/html&gt;
+                    <br>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <p>Country codes can also be added to the language code in the <b>lang</b> attribute. So, the first two characters
+        define the language of the HTML page, and the last two characters define the country.
+        <br>
+        The following example specifies English as the language and United States as the country:</p>
+    <table border="5" height="400px" width="600px">
+        <thead>
+            <tr>
+                <td>
+                    &lt;!DOCTYPE html&gt;
+                    <br>
+                    &lt;html lang="en"&gt;
+                    <br>
+                    &lt;body&gt;
+                    <br>
+                    <p>...</p>
+                    <br>
+                    &lt;/body&gt;
+                    <br>
+                    &lt;/html&gt;
+                    <br>
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <br>
+    <h2>The title Attribute</h2>
+    <p>The <b>title</b> attribute defines some extra information about an element.
+        <br>
+        The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Examples</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;p title="I'm a tooltip"&gt;This is a paragraph."&lt;/p&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <h2>We Suggest: Always Use Lowercase Attributes</h2>
+    <p>The HTML standard does not require lowercase attribute names.
+        <br>
+        The title attribute (and all other attributes) can be written with uppercase or lowercase like <b>title</b> or
+        <b>TITLE</b>.
+        <br>
+        However, W3C <b>recommends</b> lowercase attributes in HTML, and <b>demands</b> lowercase attributes for
+        stricter document types like XHTML.</p>
+    <br>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Good:</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;p title="I'm a tooltip"&gt;This is a paragraph."&lt;/p&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Bad:</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;a href=HTML Tutorial.html&gt;Visit our HTML tutorial&lt;/a&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <p>Sometimes you have to use quotes. This example will not display the title attribute correctly, because it
+        contains a space:</p>
+    <table border="5" height="400px" width="600px">
+        <caption>
+            <h3>Example</h3>
+        </caption>
+        <thead>
+            <tr>
+                <td>
+                    &lt;p title=About My Html&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <hr>
+    <h2>Single or Double Quotes?</h2>
+    <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+        <br>
+        In some situations, when the attribute value itself contains double quotes, it is necessary to use single
+        quotes:</p>
+    <table border="5" height="400px" width="600px">
+
+        <thead>
+            <tr>
+                <td>
+                    &lt;p title='John "ShotGun" Nelson'&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <br>
+    <p>Or vice versa:</p>
+    <table border="5" height="400px" width="600px">
+        <thead>
+            <tr>
+                <td>
+                    &lt;p title="John 'ShotGun' Nelson"&gt;
+                </td>
+            </tr>
+        </thead>
+    </table>
+    <hr>
+    <br>
+    <h2>Chapter Summary</h2>
+    <ul>
+        <li>All HTML elements can have <b>attributes</b></li>
+        <li>The <b>href</b> attribute of <b>&lt;a&gt;</b> specifies the URL of the page the link goes to</li>
+        <li>The <b>src</b> attribute of <b>&lt;img&gt;</b> specifies the path to the image to be displayed</li>
+        <li>The <b>width</b> and <b>height</b> attributes of <b>&lt;img&gt;</b> provide size information for images</li>
+        <li>The <b>alt</b> attribute of <b>&lt;img&gt;</b> provides an alternate text for an image</li>
+        <li>The <b>lang</b> attribute of the <b>&lt;html&gt;</b> tag declares the language of the Web page</li>
+        <li>The <b>title</b> attribute defines some extra information about an element</li>
+    </ul>
+    <hr>
+    <img src="../images/html-5-2.png" alt="html">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <a href="../HTML Tutorial/HTML Tutorial.html">Home</a>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
